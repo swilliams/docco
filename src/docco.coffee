@@ -91,9 +91,9 @@ parse = (source, code) ->
         save docsText, codeText
         hasCode = docsText = codeText = ''
       docsText += line.replace(language.commentMatcher, '') + '\n'
-    else
-      hasCode = yes
-      codeText += line + '\n'
+    # else
+    #   hasCode = yes
+    #   codeText += line + '\n'
   save docsText, codeText
   sections
 
